@@ -1,0 +1,321 @@
+/* General */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  background-color: #2c3e50;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%); /* darkens image to make text stand out */
+}
+
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #f93c3f;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.hero-text p {
+  font-size: 24px;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+}
+
+.hero-text .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #f39c12;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.hero-text .btn:hover {
+  background-color: #e67e22;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  text-align: center;
+  margin-top: 60px; /* space for fixed navbar */
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Collections */
+.collection-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.collection-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 250px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.collection-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.collection-card h3 {
+  margin: 10px 0;
+  color: #34495e;
+}
+
+.collection-card p {
+  font-size: 14px;
+  padding: 0 10px 10px 10px;
+  color: #555;
+}
+
+.collection-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact Form */
+#contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact input,
+#contact textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+#contact button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2c3e50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#contact button:hover {
+  background-color: #f39c12;
+}
+
+.contact-info {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #f39c12;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .collection-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+}
+.collections-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.collection-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.collection-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+.collection-card:hover {
+    transform: scale(1.05);
+}
+/* Navigation Menu CSS */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #222;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        gap: 20px;
+        padding: 10px 0;
+        border-top: 1px solid #ddd;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
+/* Make collection and product cards stack on small screens */
+@media (max-width: 768px) {
+    .collections-container,
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .collection-card,
+    .product-card {
+        width: 90%; /* Almost full width on mobile */
+    }
+}
+/* Hero section adjustments for mobile */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem; /* smaller title */
+    }
+    .hero p {
+        font-size: 1rem; /* smaller subtitle */
+    }
+
+    /* Showroom map adjustment */
+    #location iframe {
+        height: 300px; /* smaller height for mobile */
+    }
+}
