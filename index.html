@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lily Outfit Corner</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+            <header style="position: fixed; top: 0; width: 100%; background-color: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 1000;">
+    <nav style="display: flex; justify-content: center; padding: 15px; gap: 30px;">
+        <a href="#hero" style="text-decoration: none; color: #222; font-weight: bold;">Home</a>
+        <a href="#about" style="text-decoration: none; color: #222; font-weight: bold;">About</a>
+        <a href="#collections" style="text-decoration: none; color: #222; font-weight: bold;">Collections</a>
+        <a href="#products" style="text-decoration: none; color: #222; font-weight: bold;">Products</a>
+        <a href="#location" style="text-decoration: none; color: #222; font-weight: bold;">Showroom</a>
+        <a href="#contact" style="text-decoration: none; color: #222; font-weight: bold;">Contact</a>
+    </nav>
+</header>
+<script>
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+</script>
+
+}
+<!-- Add a spacer div to prevent content from hiding behind fixed header -->
+<div style="height: 70px;"></div>
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        
+        section {
+            padding: 60px 20px;
+        }
+        h1, h2 {
+            margin: 0 0 20px 0;
+        }
+        .hero {
+            background-color: #f4c2c2;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #222;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Lily Outfit Corner</h1>
+        <p>Discover the latest trends in women’s fashion and accessories</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Lily Outfit Corner is your go-to destination for stylish and elegant women's clothing. Our showroom offers a curated collection of dresses, accessories, and more, perfect for any occasion.</p>
+    </section>
+    <section id="collections">
+    <h2 style="text-align: center; margin-bottom: 40px;">Our Collections</h2>
+    <div class="collections-container">
+        <div class="collection-card">
+            <img src="images/collection1.jpg" alt="Collection 1" />
+            <h3>Summer Dresses</h3>
+            <p>Bright, comfortable, and trendy summer dresses.</p>
+        </div>
+        <div class="collection-card">
+            <img src="images/collection2.jpg" alt="Collection 2" />
+            <h3>Evening Wear</h3>
+            <p>Elegant outfits for special occasions and evenings.</p>
+        </div>
+        <div class="collection-card">
+            <img src="images/collection3.jpg" alt="Collection 3" />
+            <h3>Accessories</h3>
+            <p>Handbags, jewelry, and more to complete your look.</p>
+        </div>
+    </div>
+</section>
+<img src="images/collection1.jpg" alt="Test Image" width="300">
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="products">
+            <div class="product-card">
+                <h3>Product 1</h3>
+                <p>Elegant dress</p>
+            </div>
+            <div class="product-card">
+                <h3>Product 2</h3>
+                <p>Trendy accessory</p>
+            </div>
+            <div class="product-card">
+                <h3>Product 3</h3>
+                <p>Stylish outfit</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showroom Location Section -->
+    <section id="location" style="background-color: #f8f8f8; text-align: center;">
+        <h2>📍 Visit Our Showroom</h2>
+        <p>Come explore our collection in person at:</p>
+        <p style="font-weight: bold;">Lily Outfit Corner<br>V264+28, Manikganj, Bangladesh</p>
+        <div style="margin-top: 20px;">
+            <iframe 
+                src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=V264%2B28+Manikganj+Bangladesh" 
+                width="100%" 
+                height="400" 
+                style="border:0; border-radius: 15px;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@lilyoutfitcorner.com</p>
+        <p>Phone: +880 1234 567890</p>
+        <p>Follow us on social media for latest updates!</p>
+    </section>
+
+</body>
+</html>
